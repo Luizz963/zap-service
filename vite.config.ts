@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     watch: {
-      ignored: ['**/wwebjs_auth/**', '**/.wwebjs_cache/**', '**/auth/**'],
+      ignored: ['**/wwebjs_auth/**', '**/.wwebjs_cache/**'],
     },
   },
 })

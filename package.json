@@ -15,9 +15,6 @@
     "dev:server:fake": "node ./node_modules/tsx/dist/cli.mjs server/index.ts --fake"
   },
   "dependencies": {
-    "@hapi/boom": "^10.0.1",
-    "baileys": "^6.7.21",
-    "pino": "^9.9.5",
     "qrcode": "^1.5.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
