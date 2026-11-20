@@ -1,5 +1,7 @@
 # Chat Zap
 
+[![Tests](https://github.com/Luizz963/zap-service/actions/workflows/test.yml/badge.svg)](https://github.com/Luizz963/zap-service/actions/workflows/test.yml)
+
 A desktop web app for WhatsApp, with a built-in assistant: type what you want in plain Portuguese, like *"manda oi pra Ana"* or *"arquiva a conversa"*, and the app does it, always asking before anything is sent or deleted.
 
 It runs on your own computer and connects to your WhatsApp through WhatsApp Web, the same way a linked device does. A **fake mode** with invented chats lets you try everything without touching a real account.
@@ -47,6 +49,10 @@ It runs on your own computer and connects to your WhatsApp through WhatsApp Web,
 ---
 
 ## Getting started
+
+**On Windows, the easy way:** double-click **`start-fake.bat`** (test mode) or **`start.bat`** (real WhatsApp). It installs everything the first time, starts the app and opens the browser. Close the window to stop.
+
+**Or from a terminal:**
 
 ```bash
 npm install
@@ -134,6 +140,8 @@ The automated tests use Node's built-in test runner. They cover:
 - WhatsApp message IDs
 - The AI endpoint call
 - The fake WhatsApp
+
+They also run on GitHub on every push, together with the type check and build (see [.github/workflows/test.yml](.github/workflows/test.yml)). The badge at the top shows the result.
 
 The parts a person has to check, like the confirmation dialog, file pickers, sound, notifications and layout, are in the manual checklist: [tests/MANUAL-TEST-SCRIPT.md](tests/MANUAL-TEST-SCRIPT.md).
 
